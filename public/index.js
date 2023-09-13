@@ -153,7 +153,7 @@ function generateImgCheck() {
 
     const obj = {
         "files": [ 
-            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/pkocheck%204."
+            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/pkocheck%204.1.psd"
         ],
         "resources": [
             "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/Dax-Pro-Regular.ttf",
