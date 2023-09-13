@@ -153,11 +153,11 @@ function generateImgCheck() {
 
     const obj = {
         "files": [ 
-            "https://raw.githubusercontent.com/Labssss/icg/main/pko%20check%20release%204.1.psd"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/pkocheck%204."
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/icg/main/Dax-Pro-Regular.ttf",
-            "https://raw.githubusercontent.com/Labssss/icg/main/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/Dax-Pro-Regular.ttf",
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
         ],
         "environment": {
     
@@ -196,11 +196,11 @@ function generateImgForm() {
     form.time = document.querySelector('.input.time.form').value
     const obj = {
         "files": [ 
-            "https://raw.githubusercontent.com/Labssss/psd/main/release%203.psd"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/form%203.psd"
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/icg/main/Dax-Pro-Regular.ttf",
-            "https://raw.githubusercontent.com/Labssss/icg/main/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/Dax-Pro-Regular.ttf",
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
         ],
         "environment": {
     
@@ -229,10 +229,10 @@ function generateImgDesc() {
     desc.time = document.querySelector('.input.time.desc').value
     const obj = {
         "files": [ 
-            "https://raw.githubusercontent.com/Labssss/psd/main/description%201.psd"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/description%201.psd"
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/icg/main/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
         ],
         "environment": {
     
