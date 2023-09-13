@@ -57,6 +57,7 @@ window.onload = function () {
     timeInputForm.value = getTime()
     const timeInputDesc= document.querySelector('.input.time.desc')
     timeInputDesc.value = getTime()
+    generateImgDesc()
 
     let checkTime = setInterval(() => {
         if (document.querySelector('.checkboxTimeCheck').checked && document.querySelector('.input.time.check').value != getTime()) {
@@ -75,7 +76,6 @@ window.onload = function () {
             generateImgDesc()
         }
 
-        generateImgDesc
     }, 1000);
 }
 
