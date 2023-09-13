@@ -1,11 +1,6 @@
 const express = require('express')
-const fs = require('fs');
-const client = require('https');
 const path = require('path');
-// const authRouter = require('./routes/auth.router')
-// const usefulRouter = require('./routes/useful.routes')
-// const todoListRouter = require('./routes/todolist.router')
-// const projectsRouter = require('./routes/projects.router')
+
 
 const app = express()
 const port = 3001
