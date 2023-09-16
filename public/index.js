@@ -177,8 +177,8 @@ function generateImgCheck() {
     const url = encodeURI(`https://www.photopea.com#${JSON.stringify(obj)}`)
     console.log(url)
     // delete and create new iframe el
-    downloadBtn.style.display = "none"
-        copyBtn.style.display = "none"
+    // downloadBtn.style.display = "none"
+    //     copyBtn.style.display = "none"
     if (document.querySelector('.iframe')) {
         document.querySelector('.iframe').remove()
     }
@@ -277,8 +277,8 @@ window.addEventListener("message", function(e) {
             case 'receipt':
                 var img = document.querySelector("#photoCheck");
                 img.src = imageUrl;
-                downloadBtn.style.display = "inline-block"
-                copyBtn.style.display = "inline-block"
+                // downloadBtn.style.display = "inline-block"
+                // copyBtn.style.display = "inline-block"
                 linkCheck.download = `${check.price}`
                 linkCheck.href = imageUrl;
                 console.log(imageUrl)
@@ -310,13 +310,13 @@ const img = new Image();
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
 
-downloadBtn.addEventListener("click", function (e) {
-    linkCheck.click();
-})
+// downloadBtn.addEventListener("click", function (e) {
+//     linkCheck.click();
+// })
 
-copyBtn.addEventListener("click", function (e) {
-    copyToClipboard(linkCheck.href);
-})
+// copyBtn.addEventListener("click", function (e) {
+//     copyToClipboard(linkCheck.href);
+// })
 
 checkForm.addEventListener('submit', (e) => {
     e.preventDefault();
