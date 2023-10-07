@@ -156,8 +156,8 @@ function generateImgCheck() {
             "https://raw.githubusercontent.com/Labssss/ipg/main/psd/pkocheck%204.1.psd"
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/Dax-Pro-Regular.ttf",
-            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/0.ttf",
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/1.otf"
         ],
         "environment": {
     
@@ -199,8 +199,8 @@ function generateImgForm() {
             "https://raw.githubusercontent.com/Labssss/ipg/main/psd/form%203.psd"
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/Dax-Pro-Regular.ttf",
-            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/0.ttf",
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/1.otf"
         ],
         "environment": {
     
@@ -232,7 +232,7 @@ function generateImgDesc() {
             "https://raw.githubusercontent.com/Labssss/ipg/main/psd/description%201.psd"
         ],
         "resources": [
-            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/SF-Pro-Display-Bold.otf"
+            "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/1.otf"
         ],
         "environment": {
     
