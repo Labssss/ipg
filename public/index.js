@@ -51,6 +51,18 @@ window.onload = function () {
         localStorage.setItem("ChangeTimeForm", JSON.stringify({checked: false}))
     }
 
+    const radios = document.querySelectorAll('input[name="screenType"]')
+    if (localStorage.getItem("SaveScreenFormType")) {
+        const type = JSON.parse(localStorage.getItem("SaveScreenFormType")).type
+        radios.forEach( r => {
+            if (r.value == type) {
+                r.checked = true
+            }
+        })
+    } else { 
+        localStorage.setItem("SaveScreenFormType", JSON.stringify({ type: document.querySelector('input[name="screenType"]:checked').value }))
+    }
+
     const timeInputCheck = document.querySelector('.input.time.check')
     timeInputCheck.value = getTime()
     const timeInputForm = document.querySelector('.input.time.form')
@@ -133,7 +145,8 @@ const check = {
 const form = {
     name: "",
     adres: "",
-    time: ""
+    time: "",
+    type: ""
 }
 
 const desc = {
@@ -194,9 +207,10 @@ function generateImgForm() {
     form.name = document.querySelector('.input.name').value
     form.adres = adres.value
     form.time = document.querySelector('.input.time.form').value
+    form.type = document.querySelector('input[name="screenType"]:checked').value
     const obj = {
-        "files": [ 
-            "https://raw.githubusercontent.com/Labssss/ipg/main/psd/form%203.psd"
+        "files": [
+            form.type == 'phone' ? "https://raw.githubusercontent.com/Labssss/ipg/main/psd/form%203.psd" : "https://raw.githubusercontent.com/Labssss/ipg/main/psd/form%203(email).psd"
         ],
         "resources": [
             "https://raw.githubusercontent.com/Labssss/ipg/main/fonts/0.ttf",
@@ -404,6 +418,15 @@ formForm.oninput = function(event) {
             case 'input adres':
                 checkbox = JSON.parse(localStorage.getItem("SaveAdres")).checked
                 checkbox ? localStorage.setItem("SaveAdres", JSON.stringify({ ...JSON.parse(localStorage.getItem("SaveAdres")), lastvalue: adres.value })) : ''
+                break
+      }
+    }
+
+    if (event.target.type == "radio") {
+        let r = event.target;
+        switch (r.className) {
+            case 'screenType':
+                localStorage.setItem("SaveScreenFormType", JSON.stringify({ type: r.value }))
                 break
       }
     }
